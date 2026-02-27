@@ -549,9 +549,9 @@ function handleQuickBidClick() {
 
     // Get default data
     chrome.storage.local.get(['proposalTemplate'], (data) => {
-        const proposal = data.proposalTemplate || `لقد قرأت تفاصيل مشروعك وفهمت المطلوب بدقة ويسعدني جدا العمل عليه
+        const proposal = data.proposalTemplate || `تحية طيبة، لقد قرأت تفاصيل مشروعك بعناية ووجدت في نفسي الشغف والخبرة لتحويل فكرتك إلى واقع متميز يفوق التوقعات. اهتمامي بالتفاصيل هو ما يميزني، وأنا ملتزم بتقديم عمل احترافي يفتخر به كلانا.
 
-انا متحمس لاظهار افضل نتيجة ممكنة وارجو التواصل معي لمناقشة المزيد من التفاصيل قبل البدء`;
+أنا متحمس جداً للبدء وأعدك بتجربة عمل مريحة ونتائج مبهرة. بانتظار تواصلك لمناقشة الخطوات القادمة وبناء قصة نجاح جديدة معاً.`;
 
         const minBudget = getBudgetFromPage();
         const projectData = extractProjectData();
