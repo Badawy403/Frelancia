@@ -1055,7 +1055,7 @@ function injectDashboardStats() {
                 const hour = Number(m[4] ?? 0);
                 const min = Number(m[5] ?? 0);
                 const sec = Number(m[6] ?? 0);
-                const d = new Date(year, month, day, hour, min, sec);
+                const d = new Date(Date.UTC(year, month, day, hour, min, sec));
                 return Number.isNaN(d.getTime()) ? null : d;
             }
 
